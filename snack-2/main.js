@@ -54,3 +54,18 @@ const zucchine = [
         lunghezza: 4,
     },
 ]
+
+const zucchineUnder15 = [];
+const zucchineOver15 = [];
+
+for (let i = 0; i < zucchine.length; i++) {
+    // Dividi in due array separati le zucchine che misurano meno o più di 15cm.
+    if (zucchine[i].lunghezza > 15){
+        zucchineUnder15.push(zucchine[i].lunghezza)
+    } else if ( zucchine[i].lunghezza < 15){
+        zucchineOver15.push(zucchine[i].lunghezza)
+    }
+}
+
+console.log(zucchineUnder15);
+console.log(zucchineOver15);
