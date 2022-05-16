@@ -74,6 +74,6 @@ for (let i = 0; i < zucchine.length; i++) {
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
 console.log(zucchineUnder15);
-console.log(sumzucchineUnder15);
+console.log(`Il peso delle zucchine sotto i 15cm è di ${sumzucchineUnder15}gr.`);
 console.log(zucchineOver15);
-console.log(sumzucchineOver15);
+console.log(`Il peso delle zucchine sopra i 15cm è di ${sumzucchineOver15}gr.`);
