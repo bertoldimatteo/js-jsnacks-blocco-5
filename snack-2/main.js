@@ -58,14 +58,22 @@ const zucchine = [
 const zucchineUnder15 = [];
 const zucchineOver15 = [];
 
+let sumzucchineUnder15 = 0;
+let sumzucchineOver15 = 0;
+
 for (let i = 0; i < zucchine.length; i++) {
     // Dividi in due array separati le zucchine che misurano meno o più di 15cm.
     if (zucchine[i].lunghezza > 15){
         zucchineUnder15.push(zucchine[i].lunghezza)
+        sumzucchineUnder15 += zucchine[i].peso;
     } else if ( zucchine[i].lunghezza < 15){
         zucchineOver15.push(zucchine[i].lunghezza)
+        sumzucchineOver15 += zucchine[i].peso;
     }
 }
+// Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
 console.log(zucchineUnder15);
+console.log(sumzucchineUnder15);
 console.log(zucchineOver15);
+console.log(sumzucchineOver15);
